@@ -658,6 +658,237 @@ body {
   .nav { display: none; }
   .hero { padding-top: 40px; }
 }
+/* MEMBERSHIP TIERS */
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.member-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.member-card-header {
+  background: var(--teal);
+  padding: 16px 20px;
+}
+.member-card-tier {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+.member-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.member-card-fee {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 2px;
+}
+.member-card-body { padding: 18px 20px; }
+.member-card-body ul { list-style: none; }
+.member-card-body ul li {
+  font-size: 12.5px;
+  font-weight: 300;
+  color: var(--mid);
+  padding: 4px 0 4px 14px;
+  position: relative;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.member-card-body ul li:last-child { border-bottom: none; }
+.member-card-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 11px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--teal-light);
+  opacity: 0.6;
+}
+
+/* WORKING GROUPS */
+.wg-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.wg-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal-light);
+  border-radius: 0 4px 4px 0;
+  padding: 16px 20px;
+}
+.wg-theme {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+.wg-function {
+  font-size: 12.5px;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.55;
+}
+
+/* REVENUE */
+.revenue-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.revenue-table th {
+  background: var(--teal);
+  color: rgba(255,255,255,0.7);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  text-align: left;
+}
+.revenue-table td {
+  padding: 13px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.revenue-table tr:last-child td { border-bottom: none; }
+.revenue-table tr:nth-child(even) td { background: rgba(26,74,58,0.03); }
+
+/* PARTNERS */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.partner-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 22px 24px;
+}
+.partner-org {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 2px;
+}
+.partner-type {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 10px;
+}
+.partner-rationale {
+  font-size: 12.5px;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+/* MEF */
+.mef-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.mef-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px 20px;
+}
+.mef-level {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 8px;
+}
+.mef-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+.mef-list { list-style: none; }
+.mef-list li {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--mid);
+  padding: 3px 0 3px 12px;
+  position: relative;
+  line-height: 1.5;
+}
+.mef-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 10px;
+  width: 4px; height: 1px;
+  background: var(--teal-light);
+}
+
+/* AMBITION BLOCK */
+.ambition-block {
+  background: var(--teal);
+  border-radius: 4px;
+  padding: 32px 40px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+.ambition-phase {
+  border-right: 1px solid rgba(255,255,255,0.1);
+  padding-right: 32px;
+}
+.ambition-phase:last-child { border-right: none; padding-right: 0; }
+.ambition-horizon {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+.ambition-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.ambition-desc {
+  font-size: 12.5px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+}
+
 </style>
 </head>
 <body>
@@ -666,11 +897,15 @@ body {
   <div class="nav-title">Pacific Women's Association Australia (PWAA) — Strategic Framework</div>
   <ul class="nav-links">
     <li><a href="#positioning">Positioning</a></li>
+    <li><a href="#membership">Membership</a></li>
     <li><a href="#pillars">Pillars</a></li>
     <li><a href="#delivery">Delivery</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#governance">Governance</a></li>
     <li><a href="#database">Database</a></li>
+    <li><a href="#sustainability">Sustainability</a></li>
+    <li><a href="#partners">Partners</a></li>
+    <li><a href="#mef">Impact</a></li>
   </ul>
 </nav>
 
@@ -679,16 +914,18 @@ body {
   <div class="hero-title">Pacific Women's<br>Association <em>Australia</em></div>
   <div class="hero-sub">PWAA &middot; Strategic Framework &middot; May 2026</div>
   <div class="hero-lead">
-    Built from the evidence of the Women Deliver talanoa, this framework establishes PWAA as a national development organisation for Pacific women in Australia. Not a replication of what state and city-based Pacific women's organisations already do, but the infrastructure layer they cannot build themselves: nationally coordinated capacity building, train-the-trainer delivery, and a living intelligence database of Pacific women leaders and organisations across Australia.
+    Built from the evidence of the Women Deliver talanoa, this framework establishes PWAA as a national development organisation for Pacific women in Australia. Not a replication of what state and city-based Pacific women's organisations already do, but the infrastructure layer they cannot build themselves: a membership body with a constituency, nationally coordinated capacity building, train-the-trainer delivery, thematic working groups driving policy advocacy, Pacific women-led research, and a living intelligence database of Pacific women leaders and organisations across Australia.
   </div>
   <div class="hero-tags">
+    <span class="tag">Membership Body</span>
     <span class="tag">Capacity Building</span>
     <span class="tag">Train the Trainer</span>
     <span class="tag">Policy Advocacy</span>
+    <span class="tag">Thematic Working Groups</span>
     <span class="tag">Research &amp; Evidence</span>
-    <span class="tag">National Coordination</span>
     <span class="tag">Intelligence Database</span>
     <span class="tag">7 Advocacy Themes</span>
+    <span class="tag">National Women's Alliance Pathway</span>
   </div>
 </div>
 
@@ -1091,15 +1328,15 @@ body {
           <td><span class="phase-badge">Phase 1</span><br>Foundation</td>
           <td>Months 1–6<br><small style="color: var(--soft);">May–Oct 2026</small></td>
           <td>
-            Founding collective is confirmed. First priority is a formal founding meeting to ratify mandate, agree governance structure, and assign Phase 1 roles. Define legal structure. Commission community consultation across NSW, VIC, and SA. Develop branding and identity — including Pacific language name through talanoa. Identify two pilot programme themes (recommend Leadership and Economic Justice). Secure seed funding ($80–120k). Build the database framework and begin populating from Women Deliver attendee list and PICSA/Root Crop networks.
+            Founding collective is confirmed. First priority is a formal founding meeting to ratify mandate, agree governance structure, and assign Phase 1 roles. Define legal structure. Commission community consultation across NSW, VIC, and SA. Develop branding and identity — including Pacific language name through talanoa. Identify two pilot programme themes (recommend Leadership and Economic Justice). Secure seed funding ($80–120k). Build the database framework and membership architecture. Launch PWAA website and member portal. Approach AMWA and NATSIWA for partnership agreements. Begin populating database from Women Deliver attendee list and founding collective networks.
           </td>
-          <td>Founding document ratified. Legal structure established. Seed funding secured. Two programme themes selected. Database structure live.</td>
+          <td>Founding document ratified. Legal structure established. Seed funding secured. Two programme themes selected. Database and membership structure live. PWAA website launched. AMWA and NATSIWA partnership conversations initiated.</td>
         </tr>
         <tr>
           <td><span class="phase-badge mid">Phase 2</span><br>Pilot</td>
           <td>Months 7–18<br><small style="color: var(--soft);">Nov 2026–Apr 2027</small></td>
           <td>
-            Deliver first two capacity building programmes in pilot cities (Melbourne and Sydney). Recruit first cohort of train-the-trainer candidates. Build programme evaluation framework. Begin database outreach — contact existing Pacific women's organisations nationally. Develop funding partnerships for full programme suite.
+            Deliver first two capacity building programmes in pilot cities (Melbourne and Sydney). Recruit first cohort of train-the-trainer candidates. Establish first two thematic working groups (Leadership and Economic Justice). Launch Practitioner and Partner Organisation membership tiers. Build programme evaluation framework. Begin DFAT and Office for Women funding conversations. Begin database outreach nationally. Develop funding partnerships for full programme suite.
           </td>
           <td>Two programmes delivered. 40+ women through pilot. 8–10 trainer candidates identified. Database reaches 100+ entries. Evaluation complete and learning documented.</td>
         </tr>
@@ -1107,7 +1344,7 @@ body {
           <td><span class="phase-badge later">Phase 3</span><br>Scale</td>
           <td>Months 19–36<br><small style="color: var(--soft);">May 2027–Apr 2028</small></td>
           <td>
-            Expand programme suite to all seven themes. Certify first cohort of train-the-trainer facilitators. Extend reach to Brisbane, Perth, Adelaide, and regional centres. Launch database publicly. Establish annual national convening — bringing certified trainers and community together. Build revenue model toward sustainability (fee-for-service, grants, partnerships).
+            Expand programme suite to all seven themes. Certify first cohort of train-the-trainer facilitators. All seven thematic working groups operational. Extend reach to Brisbane, Perth, Adelaide, and regional centres. Launch database publicly. Establish annual national gathering as the primary Pacific women's national conference — open to members and community. Apply for Multicultural Peak Body Funding. Achieve revenue diversification across four streams. Begin building the case for Pacific-specific National Women's Alliance status.
           </td>
           <td>All 7 programmes operational. First trainer cohort certified (20+). National database publicly accessible (500+ entries). Annual national gathering held. Revenue model established.</td>
         </tr>
@@ -1372,6 +1609,24 @@ body {
           <td>June 2026</td>
           <td>Queensland representative confirmed and briefed on PWAA mandate</td>
         </tr>
+        <tr>
+          <td>Commission PWAA website and member portal — separate from MIS and APEN, live by end of Phase 1</td>
+          <td>Amanda (leads) / Founding collective</td>
+          <td>October 2026</td>
+          <td>PWAA website live with member registration, policy pages, and programme information</td>
+        </tr>
+        <tr>
+          <td>Approach AMWA (led by FECCA) for formal partnership agreement — PWAA as Pacific expert voice within AMWA's CALD mandate</td>
+          <td>Kavita / Amanda</td>
+          <td>July 2026</td>
+          <td>Partnership conversation initiated. Agreement in principle by end of Phase 1</td>
+        </tr>
+        <tr>
+          <td>Approach NATSIWA to establish peer partnership — grounding PWAA's relationship to First Nations sovereignty and the NWA model</td>
+          <td>Founding collective</td>
+          <td>August 2026</td>
+          <td>NATSIWA relationship initiated. Protocol for cross-alliance collaboration agreed</td>
+        </tr>
       </tbody>
     </table>
 
@@ -1379,6 +1634,317 @@ body {
       <strong>Immediate open question — Queensland:</strong> QLD has a significant Pacific diaspora population and no founding collective representation yet. This needs to be filled before or at the first formal founding meeting. The question for each collective member: who do you know in Queensland who is a trusted Pacific woman leader with community credibility and appetite for this work? Bring a name to the founding meeting. Western Australia is the secondary geographic gap — to be addressed in Phase 2.
     </div>
   </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION: MEMBERSHIP -->
+  <div class="section" id="membership">
+    <div class="section-label">New · Membership Model</div>
+    <div class="section-title">Membership is the mandate</div>
+    <div class="section-intro">Every comparable national women's organisation — AMWA, NATSIWA, WWDA, the National Rural Women's Coalition — has a formal membership structure. Without one, PWAA has a database but no constituency. Membership is what gives PWAA the right to speak on behalf of Pacific women to government and funders. It is also a revenue stream, an accountability mechanism, and the structure that makes the database active rather than passive.</div>
+
+    <div class="callout-accent">
+      <p><strong>Design principle:</strong> A person listed in the PWAA database is a PWAA member. An organisation listed is an organisational member. The tiered database access model is also the membership tier model — they are the same architecture, named properly.</p>
+    </div>
+
+    <div class="membership-grid">
+      <div class="member-card">
+        <div class="member-card-header">
+          <div class="member-card-tier">Individual</div>
+          <div class="member-card-name">Community Member</div>
+          <div class="member-card-fee">Free — open to all Pacific women in Australia</div>
+        </div>
+        <div class="member-card-body">
+          <ul>
+            <li>Listed in the PWAA database (name, state, theme expertise)</li>
+            <li>Access to PWAA newsletter and policy updates</li>
+            <li>Eligible to attend PWAA capacity building programmes (subsidised rate)</li>
+            <li>Invitation to annual national gathering</li>
+            <li>Voice in PWAA's community consultations</li>
+          </ul>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-card-header">
+          <div class="member-card-tier">Individual</div>
+          <div class="member-card-name">Practitioner Member</div>
+          <div class="member-card-fee">$50–100/year — sliding scale</div>
+        </div>
+        <div class="member-card-body">
+          <ul>
+            <li>Full database profile with sector, languages, speaker availability</li>
+            <li>Full access to member database for connection and referral</li>
+            <li>Eligible for train-the-trainer certification pathway</li>
+            <li>Participation in thematic working groups</li>
+            <li>Priority access to PWAA programmes and events</li>
+            <li>Voting rights in PWAA governance elections</li>
+          </ul>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-card-header">
+          <div class="member-card-tier">Organisational</div>
+          <div class="member-card-name">Partner Organisation</div>
+          <div class="member-card-fee">$200–500/year — based on org size</div>
+        </div>
+        <div class="member-card-body">
+          <ul>
+            <li>Organisation listed in PWAA database with full profile</li>
+            <li>Up to 5 staff listed as Practitioner Members</li>
+            <li>Host delivery rights — PWAA programmes delivered in your community</li>
+            <li>Named in PWAA partnership communications and reports</li>
+            <li>Seat at annual national gathering</li>
+            <li>Input into PWAA policy positions affecting your community</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>On the relationship to existing Pacific women's organisations:</strong> State-based Pacific women's organisations — PACIFICA, MWWL, and others — are invited to join as Partner Organisations. This formalises the relationship: PWAA trains their members, hosts delivery in their communities, and names them in all partnership communications. They are not competitors. They are the delivery network that makes PWAA's national reach real.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION: POLICY WORKING GROUPS -->
+  <div class="section" id="working-groups">
+    <div class="section-label">New · Policy Mechanism</div>
+    <div class="section-title">Thematic Working Groups</div>
+    <div class="section-intro">The policy advocacy arm needs a mechanism, not just a mandate. Each of PWAA's seven programme pillars has a corresponding thematic working group — a standing body of Pacific women with expertise in that theme, convened by PWAA, producing annual policy positions and coordinating responses to government inquiries. This is the structure that transforms individual Pacific women's expertise into a unified, credible national advocacy voice.</div>
+
+    <div class="callout-accent">
+      <p>AMWA operates thematic working groups for each of its key focus areas. PWAA should build this structure from the start — not retrofit it later. Each working group simultaneously serves as the policy mechanism, a member engagement pathway, and a community of practice for certified trainers in that theme.</p>
+    </div>
+
+    <div class="wg-grid">
+      <div class="wg-card">
+        <div class="wg-theme">01 · Economic Justice Working Group</div>
+        <div class="wg-function">Produces annual economic policy position. Coordinates submissions to budget processes, pay equity inquiries, and cost of living reviews. Connects diaspora economic networks. Monitors remittance policy.</div>
+      </div>
+      <div class="wg-card">
+        <div class="wg-theme">02 · Climate Working Group</div>
+        <div class="wg-function">Coordinates Pacific women's voice in Australian climate policy. Prepares submissions to DCCEEW inquiries and climate legislation reviews. Connects diaspora advocates to on-island Pacific women's climate movements. Monitors COP engagement.</div>
+      </div>
+      <div class="wg-card">
+        <div class="wg-theme">03 · Gender Equity Working Group</div>
+        <div class="wg-function">Produces Pacific women's CEDAW shadow report contributions. Coordinates submissions to DV, gender safety, and reproductive rights inquiries. Develops Pacific-centred gender equity frameworks for institutional use.</div>
+      </div>
+      <div class="wg-card">
+        <div class="wg-theme">04 · Peace &amp; Security Working Group</div>
+        <div class="wg-function">Coordinates Pacific women's voice on Australia's Women, Peace and Security National Action Plan. Produces UPR report contributions on militarisation impacts. Maps and engages parliamentarians on Pacific security issues.</div>
+      </div>
+      <div class="wg-card">
+        <div class="wg-theme">05 · Health Working Group</div>
+        <div class="wg-function">Monitors health policy affecting Pacific women. Coordinates submissions to health system reviews, mental health inquiries, and culturally appropriate care standards. Partners with the Multicultural Centre for Women's Health.</div>
+      </div>
+      <div class="wg-card">
+        <div class="wg-theme">06 · Leadership Working Group</div>
+        <div class="wg-function">Coordinates Pacific women's Pathways to Parliament advocacy. Produces submissions to electoral reform and governance diversity inquiries. Maps and mentors Pacific women candidates. Monitors political participation data.</div>
+      </div>
+    </div>
+
+    <div class="wg-card" style="margin-bottom: 24px;">
+      <div class="wg-theme">07 · Cultural Arts Working Group</div>
+      <div class="wg-function">Coordinates Pacific artists' voice in arts funding policy. Produces submissions to Creative Australia and state arts bodies on Pacific arts representation. Develops IP and cultural rights frameworks for Pacific artists. Partners with PICAA and Oceania Institute.</div>
+    </div>
+
+    <div class="note">
+      <strong>Working group structure:</strong> Each group is convened by a Practitioner Member with demonstrated expertise in the theme. Groups meet quarterly online and in person at the annual gathering. Each group produces one annual policy position paper and coordinates up to three government submissions per year. Certified trainers in the relevant theme are automatically invited into the working group — creating the link between capacity building and advocacy.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION: SUSTAINABILITY / REVENUE -->
+  <div class="section" id="sustainability">
+    <div class="section-label">New · Financial Sustainability</div>
+    <div class="section-title">Revenue model — beyond grants</div>
+    <div class="section-intro">A national body that depends entirely on grants is structurally fragile. PWAA needs at least four revenue streams active by end of Phase 3 to reach genuine sustainability. The model below is designed to grow progressively — grants fund the foundation, earned revenue builds during the pilot, and diversification is achieved by Phase 3.</div>
+
+    <table class="revenue-table">
+      <thead>
+        <tr>
+          <th>Revenue Stream</th>
+          <th>Phase</th>
+          <th>Mechanism</th>
+          <th>Estimated Annual Potential</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Government grants — Office for Women</strong><br>National Women's Alliances program and Women's Leadership and Development Program</td>
+          <td><span class="phase-badge phase2">Phase 2</span></td>
+          <td>Once incorporated and with a pilot track record, apply to Office for Women funding rounds. Long-term ambition: Pacific-specific National Women's Alliance status (Phase 4+)</td>
+          <td>$200–400k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Multicultural Peak Body Funding</strong><br>Department of Home Affairs — up to $400k/year over 4 years for incorporated multicultural peak bodies</td>
+          <td><span class="phase-badge phase3">Phase 3</span></td>
+          <td>Eligibility requires demonstrated track record and national multicultural mandate. Apply in next funding round once incorporated and operational</td>
+          <td>Up to $400k/year</td>
+        </tr>
+        <tr>
+          <td><strong>DFAT Pacific Program funding</strong><br>Australia's Pacific foreign policy budget — diaspora-to-region bridge organisations are fundable</td>
+          <td><span class="phase-badge phase2">Phase 2</span></td>
+          <td>PWAA's cross-regional work — connecting Australian diaspora women to Pacific region advocacy — is directly relevant to DFAT's Pacific priorities. Kavita Naidu's international profile is the access point</td>
+          <td>$100–250k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Membership fees</strong><br>Individual Practitioner ($50–100) and Partner Organisation ($200–500) tiers</td>
+          <td><span class="phase-badge phase2">Phase 2</span></td>
+          <td>Build membership base through programme delivery. 200 Practitioner Members + 30 Partner Organisations = approximately $25k/year at conservative rates. Grows with network</td>
+          <td>$15–50k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Earned programme revenue</strong><br>Government agencies, universities, and corporates paying PWAA to deliver capacity building to their Pacific women staff and communities</td>
+          <td><span class="phase-badge phase2">Phase 2</span></td>
+          <td>Once programmes are proven, institutional buyers (DFAT, Health departments, universities) pay full cost-recovery rates for PWAA programme delivery. MIS provides the commercial delivery model template</td>
+          <td>$80–150k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Trainer certification fees</strong><br>Fee for the train-the-trainer certification pathway</td>
+          <td><span class="phase-badge phase3">Phase 3</span></td>
+          <td>Subsidised for community trainers; full fee for institutional trainers (organisations paying for staff to be certified). Annual renewal fee sustains the revenue stream</td>
+          <td>$20–40k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Annual national gathering</strong><br>Registration fees and sponsorship from the annual Pacific women's national conference</td>
+          <td><span class="phase-badge phase3">Phase 3</span></td>
+          <td>Sliding scale registration ($50–200). Corporate and institutional sponsorship. Becomes the major annual visibility and revenue moment for PWAA</td>
+          <td>$30–80k/year</td>
+        </tr>
+        <tr>
+          <td><strong>Philanthropic funding</strong><br>Pacific-focused, gender equity, and community development philanthropy</td>
+          <td><span class="phase-badge phase1">Phase 1</span></td>
+          <td>Seed funding target $80–120k. Ongoing philanthropic relationships built through founding collective networks — Oceania Institute (Atlantic Fellows), WELA, and others already engaged</td>
+          <td>$80–200k/year</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Digital infrastructure — Phase 1 non-negotiable:</strong> PWAA needs its own website and member portal from the moment of incorporation — separate from MIS and APEN. This is not a Phase 3 consideration. An organisation without its own digital presence cannot recruit members, accept membership fees, publish policy positions, or be found by the funders and government bodies it needs to engage. Budget $8–15k for a simple, professional website with member registration in Phase 1. The GitHub framework page is a working document for the founding collective — it is not PWAA's public face.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION: STRATEGIC PARTNERS -->
+  <div class="section" id="partners">
+    <div class="section-label">New · Strategic Relationships</div>
+    <div class="section-title">Partners to build from Phase 1</div>
+    <div class="section-intro">PWAA's credibility and reach will be built substantially through who it is formally aligned with. The following partnerships are not aspirational — they are strategic necessities that should be initiated in Phase 1, not Phase 3.</div>
+
+    <div class="ambition-block">
+      <div class="ambition-phase">
+        <div class="ambition-horizon">Phase 1–2 Horizon</div>
+        <div class="ambition-title">AMWA Partner</div>
+        <div class="ambition-desc">PWAA becomes the recognised Pacific women's expert voice that AMWA draws on for government engagement on Pacific-specific issues. Formal partnership agreement. Seat at AMWA's Pacific consultations.</div>
+      </div>
+      <div class="ambition-phase">
+        <div class="ambition-horizon">Phase 2–3 Horizon</div>
+        <div class="ambition-title">National Women's Alliance Affiliate</div>
+        <div class="ambition-desc">PWAA is funded by Office for Women as a specialist Pacific women's voice — equivalent to how NATSIWA operates as the specialist First Nations women's voice within the broader NWA structure.</div>
+      </div>
+      <div class="ambition-phase">
+        <div class="ambition-horizon">Phase 4+ Horizon</div>
+        <div class="ambition-title">Pacific National Women's Alliance</div>
+        <div class="ambition-desc">PWAA achieves status as a standalone Pacific-specific National Women's Alliance — the equivalent of NATSIWA for Pacific women. Government-funded, community-owned, nationally recognised.</div>
+      </div>
+    </div>
+
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="partner-org">Australian Multicultural Women's Alliance (AMWA)</div>
+        <div class="partner-type">Strategic Alliance — initiate Phase 1</div>
+        <div class="partner-rationale">AMWA is the funded national voice for CALD women, led by FECCA. Pacific women sit within its mandate but are not centred. PWAA should approach AMWA for a formal partnership agreement — PWAA provides Pacific expertise and community connection; AMWA provides access to government policy processes and the National Women's Alliances framework. This is not competition: it is specialisation within a shared ecosystem.</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-org">National Aboriginal and Torres Strait Islander Women's Alliance (NATSIWA)</div>
+        <div class="partner-type">Peer Partnership — initiate Phase 1</div>
+        <div class="partner-rationale">Pacific women in Australia live and work on Aboriginal and Torres Strait Islander Country. PWAA needs a clear, substantive position on that relationship — not an acknowledgement formula. NATSIWA is the peer organisation that models what a First Nations-specific women's national body looks like within the NWA structure. A formal relationship with NATSIWA also signals to government that PWAA understands the broader sovereignty and rights landscape it operates within.</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-org">Department of Foreign Affairs and Trade (DFAT)</div>
+        <div class="partner-type">Funding Relationship — initiate Phase 2</div>
+        <div class="partner-rationale">Australia's Pacific foreign policy and DFAT's substantial Pacific budget make PWAA a legitimate funding target. PWAA's cross-regional work — connecting Australian diaspora women to Pacific region advocacy on climate, peace, and economic justice — is directly relevant to DFAT's Pacific priorities. Kavita Naidu's international human rights and climate profile is the access point. This should be named as a Phase 2 funding target in the roadmap.</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-org">Office for Women (PM&amp;C) and Department of Home Affairs</div>
+        <div class="partner-type">Government Engagement — initiate Phase 2</div>
+        <div class="partner-rationale">Two distinct funding and engagement pathways. Office for Women funds the National Women's Alliances program ($10.88 million, December 2024 to June 2029) — PWAA should be building toward eligibility for the next round. Home Affairs administers the Multicultural Peak Body Funding program (up to $400k/year for four years for incorporated multicultural peak bodies) — PWAA should apply once incorporated with a demonstrated track record.</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-org">Multicultural Centre for Women's Health (MCWH)</div>
+        <div class="partner-type">Programme Partnership — initiate Phase 1</div>
+        <div class="partner-rationale">MCWH is the national specialist body on health for women from culturally diverse backgrounds. Partnership with MCWH strengthens PWAA's Health working group, provides access to existing health policy networks, and avoids duplication in the health space. Pacific women's specific health needs can be articulated within MCWH's existing government relationships.</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-org">Pacific Island Forum / Pacific regional women's networks</div>
+        <div class="partner-type">Cross-Regional Alliance — initiate Phase 2</div>
+        <div class="partner-rationale">PWAA's mandate includes connecting Australian diaspora women to Pacific regional advocacy movements. Formal relationships with Pacific regional women's networks — through the Pacific Island Forum, UN Women Pacific, and bilateral connections through Kavita Naidu and Jacynta Faamau — position PWAA as the bridge organisation between the diaspora and the region. This is the basis for the DFAT funding case and the long-term international credibility of the organisation.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION: MEF / IMPACT -->
+  <div class="section" id="mef">
+    <div class="section-label">New · Monitoring &amp; Evaluation</div>
+    <div class="section-title">How PWAA knows it is working</div>
+    <div class="section-intro">The roadmap has output milestones — numbers of women through programmes, database entries, trainer cohorts. These are necessary but not sufficient. Every funder and government body will ask what has changed for Pacific women in Australia as a result of PWAA existing. This outcomes framework answers that question at three levels.</div>
+
+    <div class="mef-grid">
+      <div class="mef-card">
+        <div class="mef-level">Level 1 — Outputs</div>
+        <div class="mef-label">What PWAA delivers</div>
+        <ul class="mef-list">
+          <li>Number of women through capacity building programmes</li>
+          <li>Number of trainers certified per theme</li>
+          <li>Number of community programme deliveries by certified trainers</li>
+          <li>Database entries — individuals and organisations</li>
+          <li>Policy submissions lodged per year</li>
+          <li>Members — individual and organisational</li>
+          <li>Working group sessions convened</li>
+        </ul>
+      </div>
+      <div class="mef-card">
+        <div class="mef-level">Level 2 — Outcomes</div>
+        <div class="mef-label">What changes for Pacific women</div>
+        <ul class="mef-list">
+          <li>Increased confidence and capability in policy engagement (pre/post programme survey)</li>
+          <li>Pacific women entering or advancing in leadership roles</li>
+          <li>Pacific women successfully lodging policy submissions</li>
+          <li>New connections formed between Pacific women across states and themes</li>
+          <li>Pacific organisations accessing funding they previously could not access</li>
+          <li>Certified trainers actively delivering in their communities</li>
+        </ul>
+      </div>
+      <div class="mef-card">
+        <div class="mef-level">Level 3 — Impact</div>
+        <div class="mef-label">What changes in the system</div>
+        <ul class="mef-list">
+          <li>Pacific women's voices represented in government policy processes</li>
+          <li>Pacific women-led evidence cited in policy documents and decisions</li>
+          <li>Reduction in structural barriers Pacific women identify as blockers</li>
+          <li>PWAA recognised as the authoritative voice on Pacific women's experience in Australia</li>
+          <li>Pacific women's issues named in national gender equality strategies</li>
+          <li>Pacific women's political participation rates improving over time</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout-accent">
+      <p><strong>On research as evaluation:</strong> PWAA's research function is not separate from its monitoring and evaluation — it is the same work. The research arm generates the baseline data (what does Pacific women's experience in Australia look like now?) and tracks change over time (what is different because PWAA exists?). Dr Rita Seumanutafa-Palala's academic anchor role at Oceania Institute is critical here — PWAA's impact data should be publishable, citable, and able to stand up to government scrutiny.</p>
+    </div>
+
+    <div class="note">
+      <strong>Evaluation cadence:</strong> Annual output report to members and funders. Biennial outcomes report drawing on programme evaluations, working group assessments, and member surveys. Five-year impact evaluation — externally reviewed — to assess systemic change. The first five-year evaluation would be due in 2031, which aligns with the review of Australia's Women, Peace and Security National Action Plan and provides a natural policy moment to demonstrate PWAA's contribution.
+    </div>
+  </div>
+
 
 </div>
 
