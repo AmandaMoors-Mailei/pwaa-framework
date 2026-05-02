@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pacific Women's Association Australia (PWAA) — Strategic Framework</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --teal: #1a4a3a;
+  --teal-mid: #2d6b56;
+  --teal-light: #4a9b80;
+  --gold: #c8a43a;
+  --gold-light: #e8c96a;
+  --cream: #f7f2e8;
+  --warm-white: #fdfaf4;
+  --charcoal: #1e1e1e;
+  --mid: #4a4a4a;
+  --soft: #8a8a8a;
+  --border: rgba(26, 74, 58, 0.15);
+  --gold-border: rgba(200, 164, 58, 0.3);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--teal);
+  z-index: 100;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  border-bottom: 2px solid var(--gold);
+}
+
+.nav-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold-light); }
+
+/* HERO */
+.hero {
+  background: var(--teal);
+  padding: 120px 80px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,58,0.2);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: 200px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,58,0.1);
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.0;
+  color: #fff;
+  margin-bottom: 8px;
+  max-width: 700px;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-light);
+}
+
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 36px;
+}
+
+.hero-lead {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.75);
+  max-width: 640px;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+.hero-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid rgba(200,164,58,0.4);
+  border-radius: 2px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+/* STATUS BANNER */
+.status-bar {
+  background: var(--gold);
+  padding: 14px 80px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.status-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+}
+
+/* MAIN LAYOUT */
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 72px;
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.section-intro {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--mid);
+  max-width: 700px;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+/* CALLOUT */
+.callout {
+  background: var(--teal);
+  border-radius: 4px;
+  padding: 28px 36px;
+  margin-bottom: 32px;
+}
+
+.callout p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+}
+
+.callout-accent {
+  background: rgba(200,164,58,0.12);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+  padding: 20px 28px;
+  margin-bottom: 24px;
+}
+
+.callout-accent p {
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.7;
+}
+
+/* GRID CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.card-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--teal-light);
+  line-height: 1;
+  margin-bottom: 8px;
+  opacity: 0.4;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.card-body {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.65;
+}
+
+.card-accent {
+  border-top: 3px solid var(--gold);
+}
+
+.card-teal {
+  background: var(--teal);
+}
+
+.card-teal .card-title { color: var(--gold-light); }
+.card-teal .card-body { color: rgba(255,255,255,0.7); }
+.card-teal .card-number { color: var(--gold-light); opacity: 0.3; }
+
+/* PILLAR BLOCKS */
+.pillar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.pillar-header {
+  background: var(--teal);
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pillar-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.25);
+  line-height: 1;
+  min-width: 28px;
+}
+
+.pillar-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pillar-tag {
+  margin-left: auto;
+  background: rgba(200,164,58,0.25);
+  border: 1px solid rgba(200,164,58,0.4);
+  border-radius: 2px;
+  padding: 3px 10px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.pillar-body {
+  padding: 24px 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.pillar-col-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 10px;
+}
+
+.pillar-list {
+  list-style: none;
+}
+
+.pillar-list li {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--mid);
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pillar-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 5px;
+  height: 1px;
+  background: var(--teal-light);
+}
+
+/* PHASE TABLE */
+.phase-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.phase-table th {
+  background: var(--teal);
+  color: rgba(255,255,255,0.7);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.phase-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.phase-table tr:last-child td { border-bottom: none; }
+
+.phase-table tr:nth-child(even) td {
+  background: rgba(26,74,58,0.03);
+}
+
+.phase-badge {
+  display: inline-block;
+  background: var(--teal);
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.phase-badge.mid {
+  background: rgba(26,74,58,0.15);
+  color: var(--teal);
+}
+
+.phase-badge.later {
+  background: rgba(200,164,58,0.15);
+  color: #8a6a10;
+}
+
+/* GOVERNANCE */
+.gov-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.gov-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.gov-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.gov-card ul {
+  list-style: none;
+}
+
+.gov-card ul li {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--mid);
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.gov-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal-light);
+  opacity: 0.5;
+}
+
+/* DATABASE SECTION */
+.db-fields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.db-field {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 14px 16px;
+}
+
+.db-field-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 5px;
+}
+
+.db-field-value {
+  font-size: 12px;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+/* FOOTER */
+.doc-footer {
+  background: var(--teal);
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc-footer-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255,255,255,0.5);
+}
+
+.doc-footer-date {
+  font-size: 12px;
+  color: var(--gold-light);
+  letter-spacing: 0.1em;
+}
+
+/* UTILITY */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.text-block p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.text-block p:last-child { margin-bottom: 0; }
+
+.highlight-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--teal-light);
+  opacity: 0.4;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-row {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.stat-cell {
+  flex: 1;
+  padding: 20px 24px;
+  border-right: 1px solid var(--border);
+}
+
+.stat-cell:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--teal);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--soft);
+  letter-spacing: 0.03em;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 48px 0;
+}
+
+.note {
+  background: rgba(200,164,58,0.08);
+  border: 1px solid var(--gold-border);
+  border-radius: 3px;
+  padding: 16px 20px;
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.note strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+@media print {
+  .nav { display: none; }
+  .hero { padding-top: 40px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-title">Pacific Women's Association Australia (PWAA) — Strategic Framework</div>
+  <ul class="nav-links">
+    <li><a href="#positioning">Positioning</a></li>
+    <li><a href="#pillars">Pillars</a></li>
+    <li><a href="#delivery">Delivery</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#governance">Governance</a></li>
+    <li><a href="#database">Database</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">Strategic Framework — Working Document · May 2026</div>
+  <div class="hero-title">Pacific Women's<br>Association <em>Australia</em></div>
+  <div class="hero-sub">PWAA &middot; Strategic Framework &middot; May 2026</div>
+  <div class="hero-lead">
+    Built from the evidence of the Women Deliver talanoa, this framework establishes PWAA as a national development organisation for Pacific women in Australia. Not a replication of what state and city-based Pacific women's organisations already do, but the infrastructure layer they cannot build themselves: nationally coordinated capacity building, train-the-trainer delivery, and a living intelligence database of Pacific women leaders and organisations across Australia.
+  </div>
+  <div class="hero-tags">
+    <span class="tag">Capacity Building</span>
+    <span class="tag">Train the Trainer</span>
+    <span class="tag">Policy Advocacy</span>
+    <span class="tag">Research &amp; Evidence</span>
+    <span class="tag">National Coordination</span>
+    <span class="tag">Intelligence Database</span>
+    <span class="tag">7 Advocacy Themes</span>
+  </div>
+</div>
+
+<div class="status-bar">
+  <div class="status-item">
+    <div class="status-dot"></div>
+    <div class="status-text">Status: Concept Development Phase</div>
+  </div>
+  <div class="status-item">
+    <div class="status-dot"></div>
+    <div class="status-text">Founding collective confirmed: MIS · Kavita Naidu · The Root Crop · PICSA · Oceania Institute</div>
+  </div>
+  <div class="status-item">
+    <div class="status-dot"></div>
+    <div class="status-text">7 Themes · 82 Registered · 30+ Organisations</div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- SECTION 1: POSITIONING -->
+  <div class="section" id="positioning">
+    <div class="section-label">01 · Strategic Positioning</div>
+    <div class="section-title">What this is — and what it is not</div>
+    <div class="section-intro">The risk with any new PWAA is that it competes with what already exists, or creates another layer of coordination without adding real value. This framework is designed to avoid both.</div>
+
+    <div class="callout">
+      <p>"We are not building a peak body. We are building the infrastructure that helps every Pacific women's organisation in Australia do its work better — and ensures the women within those organisations can do theirs."</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card card-accent">
+        <div class="card-title">What already exists</div>
+        <div class="card-body">State-based and city-level Pacific women's organisations doing community services, cultural programmes, advocacy, and social support. PACIFICA, MWWL, and others across the country. They know their communities. They are embedded.</div>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">What the gap is</div>
+        <div class="card-body">No national body with a specific focus on capability uplift across the seven advocacy themes. No policy advocacy arm connecting Pacific women's lived experience to law and policy reform. No research infrastructure generating Pacific women-led evidence. No train-the-trainer pipeline. No shared intelligence database of who is doing what, where.</div>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">What PWAA fills</div>
+        <div class="card-body">A national platform that serves existing organisations rather than competing with them. Delivers specialist capacity building they cannot build themselves. Houses a policy advocacy arm that translates Pacific women's experience into evidence-based submissions, reform agendas, and legislative engagement. Generates and commissions research that Pacific women own. Creates the connective tissue between Pacific women's expertise and the policy and sector spaces that need it.</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Design principle:</strong> Every programme and resource PWAA creates should be deliverable by a state-based organisation to their own community. The PWAA trains the trainers — it does not own the relationship with community.
+    </div>
+
+    <div class="callout-accent">
+      <p>The Women Deliver talanoa produced a clear picture: Pacific women in Australia are highly capable across all seven themes, they want to take action, and they have identified specific things that are blocking them. The most consistent blockers are capacity (skills in report writing, policy engagement, civic navigation), visibility (no shared map of who the leaders are), coordination (no mechanism for Pacific women to work together nationally across themes), and evidence (no Pacific women-owned research base to support advocacy). PWAA addresses all four — through its capacity building programmes, intelligence database, policy advocacy arm, and research function working as an integrated system.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 2: NAME & IDENTITY -->
+  <div class="section">
+    <div class="section-label">02 · Identity</div>
+    <div class="section-title">Pacific Women's Association Australia</div>
+    <div class="section-intro">The name is confirmed. The rationale below explains the thinking — useful for articulating to funders, partners, and community why this name was chosen.</div>
+
+    <div class="callout-accent">
+      <p><strong>Why "Association":</strong> Signals membership, legitimacy, and permanence to funders and institutions. Broad enough to encompass capability building, advocacy, network, and database functions without over-specifying. Familiar enough to not require explanation. Does not claim to be a "peak body" — which would invite challenge from existing state-based organisations.</p>
+    </div>
+
+    <div class="callout-accent">
+      <p><strong>Why "Pacific Women's" not "Pasifika Women's":</strong> "Pacific" is the more legible term to non-Pacific audiences, government, and funders — which matters for an organisation operating at a national institutional level. "Pasifika" can be used in programme names, community communications, and cultural contexts where community recognition is the priority. The two work together rather than competing.</p>
+    </div>
+
+    <div class="callout-accent">
+      <p><strong>Why "Australia" at the end:</strong> Places the geographic mandate clearly while leaving room for cross-regional work with Pacific women's networks in New Zealand and the broader Pacific. "Australian Pacific Women's Association" would have front-loaded the geography and weakened the Pacific identity. "Australia" as a suffix reads as jurisdiction, not identity.</p>
+    </div>
+
+    <div class="note">
+      <strong>Pacific language name:</strong> PWAA should carry a Pacific language name alongside the English name — to be determined by the founding collective through talanoa. This is not decoration: the Pacific language name is how PWAA identifies itself to community. The English name is how it operates in institutional spaces. Both are the real name.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 3: SEVEN PILLARS -->
+  <div class="section" id="pillars">
+    <div class="section-label">03 · Programme Pillars</div>
+    <div class="section-title">Seven themes. Seven capacity streams.</div>
+    <div class="section-intro">The Women Deliver talanoa identified seven advocacy themes through the Head/Heart/Feet framework. Each becomes a dedicated capacity building stream. PWAA does not try to do everything — it builds the capability of Pacific women to lead within each theme themselves.</div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">01</div>
+        <div class="pillar-name">Economic Justice</div>
+        <div class="pillar-tag">Priority stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Cost of living crisis falling hardest on Pacific women and families</li>
+            <li>Gender pay gap compounded for Pacific and Māori women</li>
+            <li>Remittances as economic lifeline — not recognised in policy</li>
+            <li>Informal sector work invisible in economic measurement</li>
+            <li>Knowledge gap on global economic systems — intergenerational</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Financial literacy and economic advocacy training</li>
+            <li>Writing economic policy submissions and budget responses</li>
+            <li>Engaging parliamentary processes around pay equity</li>
+            <li>Train the trainer: economic literacy facilitation for community</li>
+            <li>Connecting diaspora economic networks across Australia and the Pacific</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">02</div>
+        <div class="pillar-name">Climate</div>
+        <div class="pillar-tag">Priority stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Pacific women are frontline climate advocates — expertise already exists</li>
+            <li>Diaspora disconnected from on-island climate realities</li>
+            <li>Gap between community knowledge and policy engagement skills</li>
+            <li>Need to connect to international climate mechanisms (COP, UNFCCC)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Climate policy literacy and advocacy pathway training</li>
+            <li>Preparing for and participating in international climate forums</li>
+            <li>Community climate storytelling for policy and media audiences</li>
+            <li>Train the trainer: climate justice facilitation for Pacific communities</li>
+            <li>Connecting diaspora advocates to on-island women leaders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">03</div>
+        <div class="pillar-name">Gender Equity</div>
+        <div class="pillar-tag">Foundational stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Gendered violence compounded by economic stress</li>
+            <li>Culturally complex navigation of gender norms within community</li>
+            <li>Pacific women under-represented in gender equity policy spaces</li>
+            <li>CEDAW and UPR mechanisms unknown to most community advocates</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Understanding and using CEDAW and UPR reporting mechanisms</li>
+            <li>Pacific-centred gender equity framing — not imported frameworks</li>
+            <li>Engaging DV and gender safety policy processes</li>
+            <li>Train the trainer: gender equity facilitation grounded in Pacific values</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">04</div>
+        <div class="pillar-name">Peace &amp; Security</div>
+        <div class="pillar-tag">Priority stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Militarisation in the Pacific region a live concern for diaspora women</li>
+            <li>West Papua, Kanaky, Ma'ohi Nui — self-determination struggles</li>
+            <li>Pacific women's voices absent from peace and security policy</li>
+            <li>Need for cross-Pacific women's solidarity on security issues</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Women, Peace and Security (UNSCR 1325) framework training</li>
+            <li>Writing UPR reports documenting militarisation impacts</li>
+            <li>Mapping and engaging parliamentarians on Pacific security issues</li>
+            <li>Train the trainer: peace advocacy facilitation for Pacific communities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">05</div>
+        <div class="pillar-name">Health</div>
+        <div class="pillar-tag">Active stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Health disparities for Pacific women compounded by cost of living</li>
+            <li>Mental health impacts of diaspora experience under-resourced</li>
+            <li>Community health navigation skills unevenly distributed</li>
+            <li>Pacific women as informal health navigators for families</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Health literacy and health system navigation training</li>
+            <li>Engaging health policy processes with Pacific women's data</li>
+            <li>Mental health first aid — Pacific cultural framing</li>
+            <li>Train the trainer: health advocacy facilitation for community</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">06</div>
+        <div class="pillar-name">Leadership</div>
+        <div class="pillar-tag">Priority stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Pacific has one of world's lowest rates of women's political participation</li>
+            <li>No pipeline: no training, no support, no preparation pathways</li>
+            <li>Political environments actively hostile to Pacific women</li>
+            <li>No legislated quotas; some communities actively exclude women from leadership</li>
+            <li>Civics knowledge gap — women don't know how to navigate political systems</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Civics education — how Australian democratic systems actually work</li>
+            <li>Pathways to Parliament programme — tailored for Pacific women</li>
+            <li>Board and governance readiness training</li>
+            <li>Train the trainer: leadership facilitation and mentoring frameworks</li>
+            <li>Connecting Pacific women to political networks and sponsors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pillar">
+      <div class="pillar-header">
+        <div class="pillar-num">07</div>
+        <div class="pillar-name">Cultural Arts</div>
+        <div class="pillar-tag">Emerging stream</div>
+      </div>
+      <div class="pillar-body">
+        <div>
+          <div class="pillar-col-label">What the talanoa showed</div>
+          <ul class="pillar-list">
+            <li>Cultural arts as advocacy — underutilised and underfunded</li>
+            <li>Pacific artists lack access to funding mechanisms and sector networks</li>
+            <li>Cultural preservation work invisible in economic and policy measurement</li>
+            <li>Arts and culture as entry point for Pacific women who don't identify with "advocacy"</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pillar-col-label">Capacity building focus</div>
+          <ul class="pillar-list">
+            <li>Arts grant writing and funding navigation for Pacific artists</li>
+            <li>Using cultural practice as policy advocacy — training and frameworks</li>
+            <li>IP and cultural rights literacy for Pacific artists and communities</li>
+            <li>Train the trainer: cultural arts facilitation and community programme design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 4: DELIVERY MODEL -->
+  <div class="section" id="delivery">
+    <div class="section-label">04 · Delivery Model</div>
+    <div class="section-title">How it works in practice</div>
+    <div class="section-intro">The delivery model has three distinct and mutually reinforcing components. Each is designed to build the others over time.</div>
+
+    <div class="card-grid">
+      <div class="card card-teal">
+        <div class="card-number">A</div>
+        <div class="card-title">Capacity Building Programmes</div>
+        <div class="card-body">Short, intensive programmes (half-day to two-day) in each of the seven theme areas. Designed for Pacific women who want to take action but need specific skills and knowledge to do so. Delivered nationally — rotating cities, online cohorts, and intensive retreats.</div>
+      </div>
+      <div class="card card-teal">
+        <div class="card-number">B</div>
+        <div class="card-title">Train the Trainer Pathway</div>
+        <div class="card-body">Each programme has a trainer certification track. Pacific women who complete the programme can go on to become certified facilitators who deliver it inside their own state-based organisations and communities. PWAA trains them; they own the local delivery.</div>
+      </div>
+      <div class="card card-teal">
+        <div class="card-number">C</div>
+        <div class="card-title">Intelligence Database</div>
+        <div class="card-body">A living, maintained database of Pacific women leaders, advocates, and organisations across Australia. Mapped by geography, sector, theme expertise, and community language. Used for referral, connection, collaboration, and funding intelligence.</div>
+      </div>
+    </div>
+
+    <div class="card-grid-2" style="margin-top: 0;">
+      <div class="card card-teal">
+        <div class="card-number">D</div>
+        <div class="card-title">Policy Advocacy Arm</div>
+        <div class="card-body">A dedicated function within PWAA that translates Pacific women's collective knowledge and lived experience into formal policy engagement. Prepares submissions to government inquiries, budget processes, and legislative reviews across the seven theme areas. Coordinates Pacific women's voices into unified policy positions rather than fragmented individual responses. Directly connected to the research function — evidence informs advocacy, advocacy identifies research priorities. This is what gives PWAA national credibility and relevance beyond community delivery.</div>
+      </div>
+      <div class="card card-teal">
+        <div class="card-number">E</div>
+        <div class="card-title">Research &amp; Evidence</div>
+        <div class="card-body">PWAA generates, commissions, and synthesises research on Pacific women's experience in Australia across the seven themes. Research is Pacific women-led and community-owned — not research done on Pacific women, but research produced by them. Findings feed directly into the policy advocacy arm and into programme design. Dr Rita Seumanutafa-Palala (Oceania Institute) provides the academic anchor for this function. Over time, PWAA becomes the primary evidence base that governments and funders turn to when they need to understand Pacific women's experience in Australia.</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Key design rule for train-the-trainer:</strong> Trainers are certified to deliver the programme as designed, and are also supported to adapt it for their community context. Pacific communities are not monolithic. A Health advocacy session delivered in Western Sydney to a Samoan community will be different in tone and example from the same session delivered in Brisbane to a Fijian-Indian community. The framework travels; the delivery is contextual.
+    </div>
+
+    <div class="two-col" style="margin-bottom: 24px;">
+      <div>
+        <div class="pillar-col-label" style="margin-bottom: 12px;">Programme design principles</div>
+        <ul class="pillar-list">
+          <li>All programmes grounded in Pacific knowledge frameworks — talanoa, va, fa'afaletui</li>
+          <li>Pacific women as experts, not recipients — build on what they already know</li>
+          <li>No "deficit" framing — programmes build on existing capability</li>
+          <li>Every programme produces something usable: a report, a submission, a plan</li>
+          <li>Online and in-person options — accessibility is non-negotiable</li>
+          <li>Peer cohort model — participants build network as they build skills</li>
+          <li>Sliding scale or fully subsidised — cost must not be the barrier</li>
+        </ul>
+      </div>
+      <div>
+        <div class="pillar-col-label" style="margin-bottom: 12px;">Train the trainer requirements</div>
+        <ul class="pillar-list">
+          <li>Complete the core programme in the relevant theme area</li>
+          <li>Complete a facilitation skills module (Pacific-centred pedagogy)</li>
+          <li>Co-facilitate one delivery under supervision</li>
+          <li>Annual renewal — certified trainers stay connected to the PWAA</li>
+          <li>Trainers receive a small delivery fee or resource support when they run locally</li>
+          <li>Trainers contribute feedback to improve programme quality over time</li>
+          <li>Community of practice — certified trainers meet quarterly nationally</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 5: ROADMAP -->
+  <div class="section" id="roadmap">
+    <div class="section-label">05 · Roadmap</div>
+    <div class="section-title">Three-phase build</div>
+    <div class="section-intro">PWAA should be built incrementally — testing before scaling, and staying close to community at every stage. The founding collective is confirmed: Amanda Moors-Mailei (Moana Impact Studio), Kavita Naidu, Rosaline Parker (The Root Crop), Rosanna Macdonald and the PICSA management team, and Dr Rita Seumanutafa-Palala (Oceania Institute, University of Melbourne).</div>
+
+    <div class="stat-row">
+      <div class="stat-cell">
+        <div class="stat-num">6</div>
+        <div class="stat-label">months to founding structure</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">12</div>
+        <div class="stat-label">months to first programme delivery</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">24</div>
+        <div class="stat-label">months to train-the-trainer certification</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">36</div>
+        <div class="stat-label">months to national database live</div>
+      </div>
+    </div>
+
+    <table class="phase-table">
+      <thead>
+        <tr>
+          <th>Phase</th>
+          <th>Timeframe</th>
+          <th>Priority actions</th>
+          <th>Milestones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="phase-badge">Phase 1</span><br>Foundation</td>
+          <td>Months 1–6<br><small style="color: var(--soft);">May–Oct 2026</small></td>
+          <td>
+            Founding collective is confirmed. First priority is a formal founding meeting to ratify mandate, agree governance structure, and assign Phase 1 roles. Define legal structure. Commission community consultation across NSW, VIC, and SA. Develop branding and identity — including Pacific language name through talanoa. Identify two pilot programme themes (recommend Leadership and Economic Justice). Secure seed funding ($80–120k). Build the database framework and begin populating from Women Deliver attendee list and PICSA/Root Crop networks.
+          </td>
+          <td>Founding document ratified. Legal structure established. Seed funding secured. Two programme themes selected. Database structure live.</td>
+        </tr>
+        <tr>
+          <td><span class="phase-badge mid">Phase 2</span><br>Pilot</td>
+          <td>Months 7–18<br><small style="color: var(--soft);">Nov 2026–Apr 2027</small></td>
+          <td>
+            Deliver first two capacity building programmes in pilot cities (Melbourne and Sydney). Recruit first cohort of train-the-trainer candidates. Build programme evaluation framework. Begin database outreach — contact existing Pacific women's organisations nationally. Develop funding partnerships for full programme suite.
+          </td>
+          <td>Two programmes delivered. 40+ women through pilot. 8–10 trainer candidates identified. Database reaches 100+ entries. Evaluation complete and learning documented.</td>
+        </tr>
+        <tr>
+          <td><span class="phase-badge later">Phase 3</span><br>Scale</td>
+          <td>Months 19–36<br><small style="color: var(--soft);">May 2027–Apr 2028</small></td>
+          <td>
+            Expand programme suite to all seven themes. Certify first cohort of train-the-trainer facilitators. Extend reach to Brisbane, Perth, Adelaide, and regional centres. Launch database publicly. Establish annual national convening — bringing certified trainers and community together. Build revenue model toward sustainability (fee-for-service, grants, partnerships).
+          </td>
+          <td>All 7 programmes operational. First trainer cohort certified (20+). National database publicly accessible (500+ entries). Annual national gathering held. Revenue model established.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Critical path item:</strong> The founding collective is confirmed across five members covering NSW, VIC, and SA. The immediate priority is the first formal founding meeting — to ratify this mandate, assign Phase 1 roles, and make the legal structure decision. This meeting should happen within the next 30 days. Queensland and Western Australia remain the most significant geographic gaps and should be addressed in the Phase 1 consultation process.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 6: GOVERNANCE -->
+  <div class="section" id="governance">
+    <div class="section-label">06 · Governance</div>
+    <div class="section-title">Structure that serves, not controls</div>
+    <div class="section-intro">The governance model must reflect Pacific values — relational, accountable to community, and flat enough to move. It should not reproduce the bureaucratic structures that Pacific women are already navigating in other institutions.</div>
+
+    <div class="gov-grid">
+      <div class="gov-card">
+        <div class="gov-card-title">Founding Collective (Confirmed)</div>
+        <ul>
+          <li><strong style="color:var(--teal)">Amanda Moors-Mailei</strong> — Moana Impact Studio (NSW / National)</li>
+          <li><strong style="color:var(--teal)">Kavita Naidu</strong> — Feminist Climate Activist / Human Rights Lawyer (NSW)</li>
+          <li><strong style="color:var(--teal)">Rosaline Parker</strong> — The Root Crop (VIC / National)</li>
+          <li><strong style="color:var(--teal)">Rosanna Macdonald and management team</strong> — Pacific Island Council South Australia / PICSA (SA)</li>
+          <li><strong style="color:var(--teal)">Dr Rita Seumanutafa-Palala</strong> — Oceania Institute, University of Melbourne (VIC)</li>
+          <li><strong style="color:var(--gold)">Queensland representative — to be confirmed</strong> — priority gap for Phase 1</li>
+          <li>Geographic coverage: NSW, VIC, SA confirmed · QLD to be filled</li>
+          <li>Holds mandate for 24 months, then transitions to elected board</li>
+          <li>Decision-making by consensus with talanoa process</li>
+          <li>Meets monthly — hybrid model</li>
+        </ul>
+      </div>
+      <div class="gov-card">
+        <div class="gov-card-title">Operational Lead (paid role, Phase 2 onwards)</div>
+        <ul>
+          <li>Pacific woman with programme management and community organising experience</li>
+          <li>Accountable to the founding collective</li>
+          <li>Oversees programme delivery, trainer certification, and database</li>
+          <li>Part-time in Phase 2 (0.6 FTE), full-time by Phase 3</li>
+          <li>Supported by volunteer coordinators in each state</li>
+        </ul>
+      </div>
+      <div class="gov-card">
+        <div class="gov-card-title">Legal &amp; Financial Home</div>
+        <ul>
+          <li>PWAA will be established as an independent national not-for-profit — this is the only structure appropriate for a national body of this mandate</li>
+          <li>APEN will hold funds and provide fiscal auspicing while the independent structure is being established in Phase 1</li>
+          <li>Independent incorporation to be completed by end of Phase 1 (October 2026)</li>
+          <li>DGR status to be pursued immediately upon incorporation — essential for philanthropic funding</li>
+          <li>MIS is NSW/National in scope and supports the establishment process but is not the legal home</li>
+          <li>Annual financial reporting to founding collective and community from incorporation</li>
+        </ul>
+      </div>
+      <div class="gov-card">
+        <div class="gov-card-title">Advisory Network</div>
+        <ul>
+          <li>Drawn from the certified trainer community as it grows</li>
+          <li>Pacific women leaders from across the 7 theme areas — national and regional</li>
+          <li>Not a formal board — a relational advisory structure</li>
+          <li>Meets twice yearly at national gatherings</li>
+          <li>Provides programme quality feedback and strategic direction input</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout-accent">
+      <p><strong>On the relationship to existing organisations:</strong> PWAA should have formal partnership agreements with existing Pacific women's organisations — not MOU bureaucracy, but clear relational agreements: we will train your women, you will host delivery for your community, we will not compete for your funding streams. The database maps them. The train-the-trainer model serves them. The national convening connects them. The relationship is explicit from day one.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 7: DATABASE -->
+  <div class="section" id="database">
+    <div class="section-label">07 · Intelligence Database</div>
+    <div class="section-title">A living map of Pacific women's expertise in Australia</div>
+    <div class="section-intro">The database is not a directory. It is a strategic intelligence tool — for connection, referral, funder navigation, and policy engagement. It answers the question that every Pacific woman has had to ask at some point: "Who else is doing this work?"</div>
+
+    <div class="callout">
+      <p>"The room at Women Deliver held 40+ organisations and none of them had a shared map of each other. That is the gap the database fills — not just for this network, but for funders, governments, and institutions that claim to want to engage Pacific women and don't know where to find them."</p>
+    </div>
+
+    <div style="margin-bottom: 24px;">
+      <div class="pillar-col-label" style="margin-bottom: 16px;">Database entry fields — Individuals</div>
+      <div class="db-fields">
+        <div class="db-field">
+          <div class="db-field-label">Full name</div>
+          <div class="db-field-value">Preferred name and pronouns</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Pacific nationality/heritage</div>
+          <div class="db-field-value">Self-identified, multiple</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">State/Territory</div>
+          <div class="db-field-value">Primary location</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Sector</div>
+          <div class="db-field-value">Public / Private / NFP / Community / Academic</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Theme expertise</div>
+          <div class="db-field-value">Self-selected from 7 themes</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Languages</div>
+          <div class="db-field-value">Community languages spoken</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Role/Title</div>
+          <div class="db-field-value">Current position</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Organisation affiliation</div>
+          <div class="db-field-value">Linked to org record</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Speaker availability</div>
+          <div class="db-field-value">Available / On request / No</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Trainer status</div>
+          <div class="db-field-value">Certified theme(s)</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Contact preference</div>
+          <div class="db-field-value">Email / Phone / LinkedIn</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Last verified</div>
+          <div class="db-field-value">Date of last update</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 32px;">
+      <div class="pillar-col-label" style="margin-bottom: 16px;">Database entry fields — Organisations</div>
+      <div class="db-fields">
+        <div class="db-field">
+          <div class="db-field-label">Organisation name</div>
+          <div class="db-field-value">Legal and operating name</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Type</div>
+          <div class="db-field-value">NFP / Inc / Grassroots / Collective / Government</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">State/Territory</div>
+          <div class="db-field-value">HQ and delivery regions</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Community served</div>
+          <div class="db-field-value">Pacific nations / diaspora / pan-Pacific</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Programme focus</div>
+          <div class="db-field-value">Mapped to 7 themes</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Contact person</div>
+          <div class="db-field-value">Linked to individual record</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Partnership status</div>
+          <div class="db-field-value">Formal partner / Network member / Listed</div>
+        </div>
+        <div class="db-field">
+          <div class="db-field-label">Website / Social</div>
+          <div class="db-field-value">Public links</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="pillar-col-label" style="margin-bottom: 12px;">Database governance</div>
+        <ul class="pillar-list">
+          <li>Opt-in only — individuals and organisations consent to being listed</li>
+          <li>Self-managed profiles — each person controls their own entry</li>
+          <li>Annual verification — entries expire without renewal</li>
+          <li>Tiered access: public view (name, state, theme); full access for members</li>
+          <li>No commercial use of data — database is not a mailing list for sale</li>
+          <li>Privacy policy aligned with Australian Privacy Act requirements</li>
+        </ul>
+      </div>
+      <div>
+        <div class="pillar-col-label" style="margin-bottom: 12px;">Database build approach</div>
+        <ul class="pillar-list">
+          <li>Start with Women Deliver attendee list (82 registered, 30+ organisations)</li>
+          <li>PICSA network — SA-based Pacific community and organisation contacts</li>
+          <li>The Root Crop network — VIC Pacific diaspora youth and community</li>
+          <li>MIS and Kavita Naidu networks — NSW and national</li>
+          <li>Oceania Institute / University of Melbourne — Dr Rita's Pacific academic and student networks (Vaka Pasifika, PICAA)</li>
+          <li>Tool: Airtable or Notion initially; purpose-built platform in Phase 3</li>
+          <li>Target: 200 entries by end of Phase 1; 500+ by end of Phase 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 8: NEXT STEPS -->
+  <div class="section">
+    <div class="section-label">08 · Immediate Next Steps</div>
+    <div class="section-title">What happens in the next 60 days</div>
+    <div class="section-intro">The founding collective is confirmed. The next 60 days are about formalising the mandate, making the legal structure decision, and beginning the database build.</div>
+
+    <table class="phase-table">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Owner</th>
+          <th>By when</th>
+          <th>Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Convene first formal founding meeting — ratify mandate, assign Phase 1 roles, agree legal structure decision process</td>
+          <td>Amanda / Kavita</td>
+          <td>June 2026</td>
+          <td>Mandate ratified, roles assigned, legal structure decision made</td>
+        </tr>
+        <tr>
+          <td>Develop founding collective agreement — one-page document confirming mandate, roles, and working principles</td>
+          <td>Amanda (drafts)</td>
+          <td>June 2026</td>
+          <td>Signed founding agreement across all four collective members</td>
+        </tr>
+        <tr>
+          <td>Identify seed funding opportunities — Women's leadership, Pacific development, community capacity building</td>
+          <td>Amanda / Kavita / PICSA</td>
+          <td>June 2026</td>
+          <td>3–5 funding prospects identified with amounts and timelines</td>
+        </tr>
+        <tr>
+          <td>Begin database seeding — Women Deliver attendee list, PICSA network (SA), The Root Crop network (VIC), MIS network (NSW)</td>
+          <td>Rosaline / PICSA team / MIS</td>
+          <td>July 2026</td>
+          <td>First 100 entries in database framework</td>
+        </tr>
+        <tr>
+          <td>Community consultation — sessions in Melbourne (VIC), Sydney (NSW), and Adelaide (SA) — what do Pacific women need from this?</td>
+          <td>Founding collective — each leads their state</td>
+          <td>August 2026</td>
+          <td>Community input documented and incorporated into framework</td>
+        </tr>
+        <tr>
+          <td>Legal structure — APEN to confirm auspicing arrangement for Phase 1. Begin independent national not-for-profit incorporation process in parallel. Brief accountant and lawyer.</td>
+          <td>Amanda (APEN) / Founding collective</td>
+          <td>September 2026</td>
+          <td>APEN auspicing confirmed. Incorporation underway. DGR application prepared.</td>
+        </tr>
+        <tr>
+          <td>Identify and approach Queensland founding member — trusted Pacific woman leader with community and/or advocacy networks in QLD</td>
+          <td>All founding collective — who does each person know in QLD?</td>
+          <td>June 2026</td>
+          <td>Queensland representative confirmed and briefed on PWAA mandate</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Immediate open question — Queensland:</strong> QLD has a significant Pacific diaspora population and no founding collective representation yet. This needs to be filled before or at the first formal founding meeting. The question for each collective member: who do you know in Queensland who is a trusted Pacific woman leader with community credibility and appetite for this work? Bring a name to the founding meeting. Western Australia is the secondary geographic gap — to be addressed in Phase 2.
+    </div>
+  </div>
+
+</div>
+
+<div class="doc-footer">
+  <div class="doc-footer-label">Pacific Women's Association Australia (PWAA) — Strategic Framework, May 2026</div>
+  <div class="doc-footer-date">Working Document — Not for Public Distribution</div>
+</div>
+
+</body>
+</html>
